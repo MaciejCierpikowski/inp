@@ -1731,7 +1731,7 @@
 
             for (let entry of interaction) {
                 console.log(`Interaction event type: %c${entry.name}`, 'font-family: monospace');
-
+                console.log(entry, 'entry');
                 // RenderTime is an estimate, because duration is rounded, and may get rounded down.
                 // In rare cases it can be less than processingEnd and that breaks performance.measure().
                 // Lets make sure its at least 4ms in those cases so you can just barely see it.
