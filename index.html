@@ -1688,16 +1688,9 @@
         console.timeEnd("mySlowFunction");
     }
 
-    document.querySelectorAll(".box > a").forEach((link) => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-
-            const href = link.getAttribute("href");
-            mySlowFunction(10);
-
-            console.log(123);
-        });
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+        mySlowFunction(10);
+    })
 </script>
 
 <script>
