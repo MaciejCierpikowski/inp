@@ -1689,7 +1689,9 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        mySlowFunction(10);
+        setTimeout(() => {
+            mySlowFunction(10);
+        }, 0)
     })
 </script>
 
